@@ -81,3 +81,56 @@ select {
 body {
   background: pink;
 }
+
+header {
+  background: red;
+}
+
+nav {
+  background: blue;
+}
+
+main {
+  background: yellowgreen;
+}
+
+/* Page Container */
+
+.page-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+/* Main Nav */
+
+.main-nav {
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, max-content);
+  grid-auto-rows: max-content;
+}
+
+.main-nav  * {
+  border: 1px solid black;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: .5rem;
+}
+
+.home * {
+  border: 1px solid black;
+}
+
+.menu-items-group-1 {
+  padding: .5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .5rem;
+}
