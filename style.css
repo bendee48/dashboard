@@ -79,6 +79,7 @@ select {
 /* Main Styling */
 
 body {
+  font-family: 'Roboto', sans-serif;
   background: pink;
 }
 
@@ -113,6 +114,7 @@ main {
   grid-template-rows: repeat(3, max-content);
   grid-auto-rows: max-content;
   background: #7c3aed;
+  color: white;
 }
 
 .main-nav  * {
@@ -129,11 +131,43 @@ main {
   border: 1px solid black;
 }
 
+/*** Menu Items ***/
+
+.menu-items li {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1rem;
+}
+
 .menu-items {
   padding: .5rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: .5rem;
+}
+
+/*** Logo ***/
+
+.main-logo {
+  background: url('./images/nuxt.svg');
+  width: 2rem;
+  height: 2rem;
+}
+
+/*** Icons ***/
+
+.icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.home-icon {
+  background: url('./images/home.svg');
+}
+
+.profile-icon {
+  background: url('./images/account.svg');
 }
 
 /*** Header ***/
