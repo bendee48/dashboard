@@ -108,6 +108,7 @@ main {
 /* Main Nav */
 
 .main-nav {
+  padding: .5rem;
   grid-row: span 2;
   display: grid;
   grid-template-columns: 1fr;
@@ -117,21 +118,22 @@ main {
   color: white;
 }
 
-.main-nav  * {
-  border: 1px solid black;
-}
-
 .home {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  padding: .5rem;
-}
-
-.home * {
-  border: 1px solid black;
+  grid-template-columns: repeat(2, max-content);
+  gap: .5rem;
 }
 
 /*** Menu Items ***/
+
+.menu-items {
+  padding: .5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .5rem;
+  font-size: .9rem;
+}
 
 .menu-items li {
   display: grid;
@@ -139,17 +141,9 @@ main {
   gap: 1rem;
 }
 
-.menu-items {
-  padding: .5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: .5rem;
-}
-
 /*** Logo ***/
 
 .main-logo {
-  background: url('./images/nuxt.svg');
   width: 2rem;
   height: 2rem;
 }
@@ -158,16 +152,8 @@ main {
 
 .icon {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.home-icon {
-  background: url('./images/home.svg');
-}
-
-.profile-icon {
-  background: url('./images/account.svg');
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 /*** Header ***/
